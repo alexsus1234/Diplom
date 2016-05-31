@@ -70,4 +70,31 @@ public class FileAPI {
         //  System.out.println(k);
         return k;
     }
+    public static void outFile(String fileName,LinkedList<String> fileLines){
+        try{
+            File f=new File(fileName);
+            int i=1;
+            while(f.exists()){
+                f=new File(fileName+"["+i+"]");
+                i++;
+            }
+            FileWriter fos = new FileWriter(f.getAbsolutePath());
+            BufferedWriter  bw=new BufferedWriter (fos);
+            for(i=0;i<fileLines.size();i++){
+                bw.write(fileLines.get(i)+"\n");
+
+            }
+            bw.close();
+            fos.close();
+
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+
+
+
+
+    }
 }

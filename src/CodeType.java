@@ -124,14 +124,22 @@ public class CodeType {
 
     }
 
-    public static void recogniseCode(LinkedList<String> fileLines){
+    public static int recogniseCode(LinkedList<String> fileLines){
         int countJava=javaCode(fileLines);
         int coutCsharp=cSharpCode(fileLines);
         int countCplus=cPlusCode(fileLines);
         int counNOCshap=cSharpCodeNO(fileLines);
 
         System.out.println("j = "+countJava+" c# = "+coutCsharp+" "+counNOCshap+  " c++ ="+countCplus);
+        if(countJava>0){
+            return 1;
+        }else if(coutCsharp>0){
+            return 2;
+        }else if(countCplus>0){
+            return 3;
+        }
 
+    return 0;
 
     }
 
