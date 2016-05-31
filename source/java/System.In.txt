@@ -1,0 +1,7 @@
+available
+close
+mark
+markSupported
+read
+reset
+skip

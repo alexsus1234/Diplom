@@ -1,0 +1,8 @@
+append
+checkError
+format
+flush
+print
+printf
+println
+write

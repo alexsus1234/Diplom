@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="poi-ooxml-schemas-3.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/poi-ooxml-schemas-3.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/ooxml-schemas-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
